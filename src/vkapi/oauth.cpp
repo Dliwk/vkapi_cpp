@@ -23,7 +23,6 @@ std::string vkapi::request::oauth(std::string login, std::string password, int a
     request.perform();
     Json::Value root;
     os >> root;
-    std::cout << root << std::endl;
     if (root.isMember("error"))
         throw vkapi::error::AuthError(root["error"].asString(), root);
     return root["access_token"].asString();

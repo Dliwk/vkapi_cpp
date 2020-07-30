@@ -26,7 +26,6 @@ Json::Value vkapi::request::api_request(const std::string& method, const std::ma
     request.perform();
     Json::Value root;
     os >> root;
-    std::cout << root;
     if (root.isMember("error")) {
         throw vkapi::error::ApiError(root["error"]["error_code"].asInt(),
                                      root["error"]["error_msg"].asString());

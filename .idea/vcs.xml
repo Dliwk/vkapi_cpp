@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/lib/curlpp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdparty/curlpp" vcs="Git" />
   </component>
 </project>

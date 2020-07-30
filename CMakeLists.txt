@@ -25,4 +25,4 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${JSONCPP_INCLUDE_DIRS})
 
 target_link_libraries(${PROJECT_NAME} ${THIRDPARTY_STATIC_LIBS} ${JSONCPP_LIBRARIES})
 
-add_subdirectory(examples)
+#add_subdirectory(examples)

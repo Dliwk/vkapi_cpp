@@ -5,7 +5,7 @@
 #include <curlpp/Options.hpp>
 #include <curlpp/cURLpp.hpp>
 
-std::string map_to_url_params(const std::map<std::string, std::string>& params) {
+std::string vkapi::request::map_to_url_params(const std::map<std::string, std::string>& params) {
     std::string result;
     for (auto iter = params.begin(); iter != params.end(); ++iter) {
         result += curlpp::escape(iter->first) + "=" + curlpp::escape(iter->second);

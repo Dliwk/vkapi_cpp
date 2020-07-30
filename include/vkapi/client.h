@@ -9,9 +9,9 @@ namespace vkapi {
     public:
         explicit VkApi(std::string token);
 
-        VkApi(std::string login, std::string password);
+        VkApi();
 
-        void auth(std::string login, std::string password);
+        void auth(const std::string &login, const std::string &password, int app_id, std::string app_secret);
 
         std::string token();
 
@@ -23,8 +23,9 @@ namespace vkapi {
     public:
         explicit Request(VkApi vk);
 
-        void setopt(const std::string& key, int value);
-        void setopt(const std::string& key, std::string value);
+        void setopt(const std::string &key, int value);
+
+        void setopt(const std::string &key, std::string value);
 
         void setmethod(std::string methodname);
 

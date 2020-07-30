@@ -30,5 +30,5 @@ Json::Value vkapi::request::api_request(const std::string& method, const std::ma
         throw vkapi::error::ApiError(root["error"]["error_code"].asInt(),
                                      root["error"]["error_msg"].asString());
     }
-    return root;
+    return root["response"];
 }
